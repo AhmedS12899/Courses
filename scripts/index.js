@@ -20,7 +20,9 @@ function createAndDisplayTable(tbody, a, i){
     let cell1 = row.insertCell(0);
     let cell2 = row.insertCell(1);
     let cell3 = row.insertCell(2);
+    let cell4 = row.insertCell(3);
     cell1.innerHTML = a.dept;
     cell2.innerHTML = a.courseNum;
-    cell3.innerHTML = `<a href='file:///C:/Users/flash/YearUp/Desktop/YearUp%20Software/Pluralsight/LearnToCode/NodeRestAPI/courses-api-express-server/Courses/details.html?courseid=${a.id}'>${a.courseName}</a>`;
+    cell3.innerHTML = `<a href='C:/Users/flash/YearUp/Desktop/YearUp Software/Pluralsight/LearnToCode/NodeRestAPI/Courses/details.html?courseid=${a.id}'>${a.courseName}</a>`;
+    cell4.innerHTML = `<a href='C:/Users/flash/YearUp/Desktop/YearUp Software/Pluralsight/LearnToCode/NodeRestAPI/Courses/confirm-delete.html?courseid=${a.id}'><button type="button" class="btn btn-primary" id="newCourses">Delete Entry</button></a>`
 }
